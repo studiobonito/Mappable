@@ -179,12 +179,12 @@ class GoogleMapUtil
 	
 	/**
 	 * Creates a new {@link GoogleMapsAPI} object loaded with the default settings
-	 * and places all of the items in a {@link DataObjectSet} on the map
+	 * and places all of the items in a {@link ArrayList} on the map
 	 *
-	 * @param DataObjectSet $set
+	 * @param ArrayList $set
 	 * @return GoogleMapsAPI
 	 */
-	public static function get_map(DataObjectSet $set) {
+	public static function get_map(ArrayList $set) {
 		$gmap = self::instance();
 		if($set) {
 		    foreach($set as $obj) {
