@@ -9,7 +9,7 @@
 class MappableData extends Extension {
 
 	public function GoogleMap($width = null, $height = null) {
-		$gmap = GoogleMapUtil::get_map(new ArrayList($this->owner));
+		$gmap = GoogleMapUtil::get_map(new ArrayList(array($this->owner)));
 		$w = $width ? $width : GoogleMapUtil::$map_width;
 		$h = $height ? $height : GoogleMapUtil::$map_height;
 		$gmap->setSize($w,$h);
